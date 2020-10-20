@@ -1,0 +1,16 @@
+apiVersion: sources.knative.dev/v1beta1
+kind: KafkaSource
+metadata:
+  name: kafkasource
+  namespace: ns08
+spec:
+  consumerGroup: knative-group
+  bootstrapServers:
+  - my-cluster-kafka-bootstrap.kafka:9092
+  topics:
+  - kafkasource-ns08
+  sink:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: sink

@@ -1,0 +1,6 @@
+apiVersion: messaging.knative.dev/v1beta1
+kind: InMemoryChannel
+metadata:
+  name: imc
+  namespace: ns04
+spec: {}

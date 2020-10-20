@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-kafka
+  namespace: ns02
+data:
+  bootstrapServers: my-cluster-kafka-bootstrap.kafka:9092

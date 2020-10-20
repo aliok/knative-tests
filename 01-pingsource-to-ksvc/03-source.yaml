@@ -1,0 +1,13 @@
+apiVersion: sources.knative.dev/v1alpha2
+kind: PingSource
+metadata:
+  name: source
+  namespace: ns01
+spec:
+  schedule: "*/1 * * * *"
+  jsonData: '{"message": "Thanks for doing Knative Tutorial 01"}'
+  sink:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: sink

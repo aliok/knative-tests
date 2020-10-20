@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: sink
+  namespace: ns01
+spec:
+  template:
+    metadata:
+      name: sink-v01
+    spec:
+      containers:
+      - image: gcr.io/knative-releases/knative.dev/eventing-contrib/cmd/event_display
