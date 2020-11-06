@@ -47,5 +47,5 @@ Fix: https://github.com/knative/eventing/pull/4472
 - Same shit for KafkaChannel dispatcher deployment: https://github.com/knative/eventing-contrib/pull/1660
 
 - Not really related to upgrade, I found this: https://github.com/knative/eventing-contrib/issues/1659
-
-JIRA: https://issues.redhat.com/browse/SRVKE-631 
+  
+  JIRA: https://issues.redhat.com/browse/SRVKE-631 
