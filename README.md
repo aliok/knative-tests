@@ -41,10 +41,11 @@ bootstrapServers: my-cluster-kafka-bootstrap.kafka:9092
 
 Issues found:
 - `kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.4/eventing.yaml` says 
-"The Deployment "pingsource-mt-adapter" is invalid: spec.template.spec.containers[0].env[0].valueFrom: Invalid value: "": may not be specified when "value` is not empty"
+`"The Deployment "pingsource-mt-adapter" is invalid: spec.template.spec.containers[0].env[0].valueFrom: Invalid value: "": may not be specified when "value` is not empty"`
 Fix: https://github.com/knative/eventing/pull/4472
-- Same shit for KafkaChannel dispatcher deployment
-https://github.com/knative/eventing-contrib/pull/1660
-- Not really related to upgrade, I found this:
-https://github.com/knative/eventing-contrib/issues/1659
+
+- Same shit for KafkaChannel dispatcher deployment: https://github.com/knative/eventing-contrib/pull/1660
+
+- Not really related to upgrade, I found this: https://github.com/knative/eventing-contrib/issues/1659
+
 JIRA: https://issues.redhat.com/browse/SRVKE-631 
