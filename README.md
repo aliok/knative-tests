@@ -35,7 +35,9 @@ kubectl apply -f https://github.com/knative/eventing-contrib/releases/download/v
 - Again, because of https://github.com/knative/eventing-contrib/issues/1659, edit the config-kafka configmap in knative-eventing:
 ```
 bootstrapServers: my-cluster-kafka-bootstrap.kafka:9092
-```
+```   
+
+- Check the instructions in individual directories to see if things are still running
 
 Issues found:
 - `kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.4/eventing.yaml` says 
