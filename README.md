@@ -26,10 +26,10 @@ bootstrapServers: my-cluster-kafka-bootstrap.kafka:9092
 
 - Upgrade Eventing + Kafka to 0.18:
 ```
-kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.4/eventing-pre-install-jobs.yaml
-kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.4/eventing.yaml
-kubectl apply -f https://github.com/knative/eventing-contrib/releases/download/v0.18.3/kafka-channel.yaml
-kubectl apply -f https://github.com/knative/eventing-contrib/releases/download/v0.18.3/kafka-source.yaml
+kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.5/eventing-pre-install-jobs.yaml
+kubectl apply -f https://github.com/knative/eventing/releases/download/v0.18.5/eventing.yaml
+kubectl apply -f https://github.com/knative/eventing-contrib/releases/download/v0.18.4/kafka-channel.yaml
+kubectl apply -f https://github.com/knative/eventing-contrib/releases/download/v0.18.4/kafka-source.yaml
 ```
 
 - Again, because of https://github.com/knative/eventing-contrib/issues/1659, edit the config-kafka configmap in knative-eventing:
